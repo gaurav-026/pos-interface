@@ -1,5 +1,5 @@
 import React from 'react';
-const Details = ({ show, onHide, name, setName, email, setEmail, mobile, setMobile, showReceipt, setShowReceipt}) => {
+const Details = ({ show, onHide, name, setName, email, setEmail, mobile, setMobile, showReceipt, setShowReceipt }) => {
   if (!show) return null; // Don't render the modal if show is false
 
   // Function to handle Proceed button click
@@ -16,7 +16,7 @@ const Details = ({ show, onHide, name, setName, email, setEmail, mobile, setMobi
             &times;
           </button>
         </div>
-
+        {/* form for user details */}
         <div className="mt-4">
           <form>
             <div className="mb-4">
@@ -29,7 +29,7 @@ const Details = ({ show, onHide, name, setName, email, setEmail, mobile, setMobi
                 className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
                 placeholder=""
                 value={name}
-                onChange={(e)=> setName(e.target.value)}
+                onChange={(e) => setName(e.target.value)}
                 autoFocus
               />
             </div>
@@ -43,7 +43,7 @@ const Details = ({ show, onHide, name, setName, email, setEmail, mobile, setMobi
                 className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
                 placeholder="name@example.com"
                 value={email}
-                onChange={(e)=> setEmail(e.target.value)}
+                onChange={(e) => setEmail(e.target.value)}
                 autoFocus
               />
             </div>
@@ -56,13 +56,13 @@ const Details = ({ show, onHide, name, setName, email, setEmail, mobile, setMobi
                 id="mobile"
                 className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
                 value={mobile}
-                onChange={(e)=> setMobile(e.target.value)}
+                onChange={(e) => setMobile(e.target.value)}
                 autoFocus
               />
             </div>
           </form>
         </div>
-
+        {/* buttons  */}
         <div className="mt-6 flex justify-end space-x-4">
           <button
             onClick={onHide}

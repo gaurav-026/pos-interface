@@ -5,7 +5,7 @@ import { add } from '../slices/cartSlice';
 import toast, { Toaster } from 'react-hot-toast';
 import SideCart from '../components/SideCart';
 import { IoCheckmarkDoneCircleSharp } from 'react-icons/io5';
-import { IoMdAdd} from 'react-icons/io';
+import { IoMdAdd } from 'react-icons/io';
 import { FaStar } from 'react-icons/fa';
 
 const MainPage = () => {
@@ -50,7 +50,7 @@ const MainPage = () => {
     toast.success("Item Added!");
   };
 
-  
+
   return (
     <div className='lg:pl-10 lg:pr-0 md:px-8 px-5 flex gap-10 lg:my-0 md:my-10 my-5 h-fit'>
       {/* Left Side */}

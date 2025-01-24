@@ -8,7 +8,7 @@ import personal from './assets/personal.jpg'
 import technical from './assets/technical.jpg'
 import speaking from './assets/speaking.jpg'
 
-
+//assuming dummy data to implement requried functionalities
 export const services = [
     {
         name: 'Yoga',

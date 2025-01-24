@@ -3,6 +3,7 @@ import React from 'react';
 
 const Receipt = ({ show, onHide, name, email, mobile, totalPrice }) => {
     if (!show) return null;
+    // to download the reciept 
     const download = () => {
         const doc = new jsPDF();
 
@@ -23,6 +24,7 @@ const Receipt = ({ show, onHide, name, email, mobile, totalPrice }) => {
         onHide(); // Close the receipt modal after download
     }
     return (
+        // display user details with date and amount paid 
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-gray-500 bg-opacity-50">
              <div className="bg-white p-6 rounded-lg shadow-lg max-w-sm w-full">
                 <div className="flex justify-between items-center">
